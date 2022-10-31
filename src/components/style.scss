@@ -1,0 +1,289 @@
+
+.App{
+    height: 100vh;
+    .leftContainer{
+      
+background-color: #e4e8eb;    
+width:100vw;    
+       
+        .logoContainer{
+            padding: 20px;
+            
+        }
+        .leftsubContainer{
+            border:1px solid rgb(218, 218, 218);
+            padding:30px 20px;
+        }
+    }
+}
+.openclose{
+    background-color: rgba(233, 233, 233, 0.56);
+    height: 60px; 
+    padding-top: 20px;
+    border-radius: 10px 0px 0px 10px;
+
+  margin-left: 105px ;
+   &:hover{
+    background-color: rgba(157, 157, 157, 0.56);
+   }
+}
+.lefttop{
+
+    .sidebarTopText{
+
+margin-left: 16px;
+
+    }
+}
+.leftMiddle{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    padding: 25px;
+    height: 55px;
+}
+.openSidebar{
+    background-color: rgba(233, 233, 233, 0.56);
+    height: 60px;
+    position:absolute;
+    transform: rotate(180deg);
+    display: flex;
+    align-items: center;
+    border-radius: 10px 0px 0px 10px;
+    color: black;
+    margin-top: 20px;
+    left: 0px;
+    &:hover{
+        background-color: rgba(157, 157, 157, 0.56);
+
+
+    }
+}
+
+.Navitems{
+    display: flex;
+    justify-content: space-between;
+    .searchContainer{
+        margin-top: 5px;
+        margin-left: 30px;
+        .search{
+            width: 400px;
+        
+          background-color: #f8f9fd;
+          
+        }
+
+    }
+    .NavOptions{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+          
+            
+            Button{
+            padding: 15px 20px;
+            margin: 5px 10px;
+            text-transform: capitalize;
+        
+            }
+            .chat,.more{
+                span{
+                    margin-right: 10px;
+                    padding-top: 5px;
+                    &:hover{
+                        background-color: white;
+                    }
+                }
+                color: #848484;
+            }
+            .Share{
+background-color: white;
+color: #bebebe;
+border: 1px solid #bebebe;
+span{
+margin-right: 15px;
+padding-top: 5px;
+}
+padding: 10px 20px;
+
+            }
+            .notes{
+                color:#f05756;
+                background-color: #fff6f8;
+            }
+        }
+    
+}
+.lightDark{
+ 
+    padding: 5px;
+  margin-top: 10px;
+    background-color: #f8f9fd;
+    color: #c1c2c6;
+    display: flex;
+    justify-content: space-around;
+    
+    .dark{
+        width:120px;
+        background-color: transparent;
+        border-style: none;
+        color:#c1c2c6;
+        .darkicon{
+            transform: rotate(-35deg);
+        }
+    }
+    .light{
+        width:120px;
+        background-color: transparent;
+        border-style: none;
+    color:black;
+    }
+    .dark,.light{
+        &:hover{
+            background-color: white;
+        }
+    }
+}
+.liststyle{
+ 
+   width: 100%;
+   border-left: 5px solid white;
+
+   padding: 10px;
+ 
+   &:hover{
+    color: #f05756;
+    width: 100%;
+    padding: 10px;
+    border-left: 5px solid #f05756;
+    .icon{
+        color: #f05756;
+       }
+   }
+}
+.items{
+    margin-left: 10px;
+}
+
+@media (min-width:"992px") {
+    .Navitems{
+        display: flex;
+        justify-content: space-between;
+                .searchContainer{
+            .search{
+                width: 400px;
+            }
+        }
+        .NavOptions{
+        
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+              
+                
+                Button{
+                padding: 15px 20px;
+                margin: 5px 10px;
+              
+            
+                }
+                .Share{
+background-color: white;
+color: #bebebe;
+border: 1px solid #bebebe;
+span{
+    margin-right: 15px;
+    padding-top: 5px;
+}
+padding: 10px 20px;
+
+                }
+                .notes{
+                    color:#f05756;
+                    background-color: #fff6f8;
+                }
+            }
+    }
+}
+@media (max-width:"992px") {
+    .Navitems{
+        display: flex;
+        justify-content: space-between;
+                .searchContainer{
+            .search{
+                width: 200px;
+            }
+        }
+        .NavOptions{
+        
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+                
+                background-color: white;
+                Button{
+                    padding: 15px 20px;
+                    margin: 5px 10px;
+                  
+                
+                    }
+                    .chat,.more{
+                        color: #848484;
+                    }
+                    .Share{
+        background-color: white;
+        color: #bebebe;
+        border: 1px solid #bebebe;
+        span{
+        margin-right: 15px;
+        padding-top: 5px;
+        }
+        padding: 10px 20px;
+        
+                    }
+                    .notes{
+                        color:#f05756;
+                        background-color: #fff6f8;
+                    }
+            }
+       
+    }
+}
+@media (max-width:"843px") {
+    .Navitems{
+        display: block;
+        justify-content: space-between;
+                .searchContainer{
+                    margin-top: -5px;
+                    padding: 10px;
+            .search{
+                width:100%;
+            }
+        }
+        .NavOptions{
+        
+            display: none;
+            justify-content: center;
+            align-items: center;
+           
+                padding: 15px 0px;
+                background-color: white;
+                Button{
+            
+                }
+            }
+       
+    }
+
+}
+@media (min-width:"375px") {
+  .items{
+    margin-left: 5px;
+   
+  }
+}
+

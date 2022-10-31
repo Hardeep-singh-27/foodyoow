@@ -1,0 +1,70 @@
+.formContainer{
+    min-width: 300px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    .form{
+        padding: 20px;
+     
+        width: 400px;
+        .inputContainer{
+            input{
+                border: 1px solid gray;
+                width: 100%;
+                padding: 10px;
+                border-radius: 5px;
+               
+                &:focus{
+                   border:1px solid gray;
+                   border-style: none;
+                }
+                
+            }
+            .error{
+                color: red;
+                font-size: 15px;
+                font-weight: 450;
+            }
+       
+            
+        }
+        button{
+            background-color: grey;
+            margin-top: 15px;
+            border-style: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            color: white;
+            font-weight: 600;
+        }
+     .signup{
+        background-color: #f05756;
+        margin-left:10px;
+     }
+    }
+}
+.grandparent{
+    transition: .5s;
+    margin: auto;
+&:hover{
+background-color: rgb(196, 196, 196);
+}
+
+}
+.text{
+    text-align: center;
+
+}
+
+
+// useEffect(() => {
+//     axios.post(`${baseurl}/auth/login`,
+//       {
+//         email: "user@gmail.com",
+//         password: "test1234"
+//       })
+//       .then((res) => setUser(res.data.data.email))
+//       .catch((err) => console.log(err))
+//   }, [])
